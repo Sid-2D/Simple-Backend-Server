@@ -5,7 +5,7 @@ var app = require('express')(),
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
-	res.send('Server working, available routes:\n1. GET /course/:type\n2. POST /student\n3. POST /data');
+	res.send('Server working, available routes:<br>1. GET /course/:type<br>2. POST /student<br>3. POST /data');
 });
 
 app.get('/course/:type', function (req, res) {
