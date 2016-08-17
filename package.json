@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Simple backend server for a friend's android app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sid-2D/Simple-Backend-Server.git"
+  },
+  "author": "Siddharth Chopra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sid-2D/Simple-Backend-Server/issues"
+  },
+  "homepage": "https://github.com/Sid-2D/Simple-Backend-Server#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
