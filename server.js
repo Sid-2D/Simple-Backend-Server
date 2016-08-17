@@ -4,6 +4,10 @@ var app = require('express')(),
 
 app.use(bodyParser.json());
 
+app.get('/', function (req, res) {
+	res.send('Server working, available routes:\n1. GET /course/:type\n2. POST /student\n3. POST /data');
+});
+
 app.get('/course/:type', function (req, res) {
 	MongoClient.connect(process.env.MONGO_URL, function (err, db) {
 		if (!err) {
@@ -58,6 +62,4 @@ app.post('/data', function (req, res) {
 	});
 });
 
-app.listen(process.env.PORT||3000, function () {
-	console.log("Server is live...");
-});
+app.listen(process.env.PORT);
