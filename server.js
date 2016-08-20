@@ -31,7 +31,7 @@ app.post('/student', function  (req, res) {
 		if (!err) {
 			db.collection('Student').insertOne(req.body, function (err) {
 				if (!err) {
-					res.send('Inserted Successfully.');
+					res.send({message: 'Inserted Successfully.'});
 				} else {
 					res.send({error: err});
 				}
@@ -49,7 +49,7 @@ app.post('/data', function (req, res) {
 		if (!err) {
 			db.collection('Course').insertOne(req.body, function (err) {
 				if (!err) {
-					res.send('Inserted Successfully.');
+					res.send({message: 'Inserted Successfully.'});
 				} else {
 					res.send({error: err});
 				}
